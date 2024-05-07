@@ -1,17 +1,18 @@
 import Carousel from "./Components/carousel/index"
+import Test from "./Components/pages/testPage";
 
 function App() {
   const pages1 = [
-    { text: 'Page A', url: '/#', backGround: 'bg-blue-400'},
-    { text: 'Page B', url: '/#', backGround: 'bg-red-400'},
-    { text: 'Page C', url: '/#', backGround: 'bg-green-400'},
-    { text: 'Page A', url: '/#', backGround: 'bg-blue-400'},
+    { text: 'Page A', url: '/hello', backGround: 'bg-blue-400'},
+    { text: 'Page B', url: '/12', backGround: 'bg-red-400'},
+    { text: 'Page C', url: '/32', backGround: 'bg-green-400'},
+    { text: 'Page A', url: '/43', backGround: 'bg-blue-400'},
   ];
 
   const pages2 = [
-    { text: 'Page X', url: '/#', backGround: 'bg-blue-400'},
-    { text: 'Page Y', url: '/#', backGround: 'bg-red-400'},
-    { text: 'Page Z', url: '/#', backGround: 'bg-green-400'}
+    { text: 'Page X', url: '/23', backGround: 'bg-blue-400'},
+    { text: 'Page Y', url: '/21', backGround: 'bg-red-400'},
+    { text: 'Page Z', url: '/423', backGround: 'bg-green-400'}
   ];
 
   return (
@@ -26,9 +27,12 @@ function App() {
 
       <h2 className="mt-16 flex justify-center">Advanced</h2>
       <Carousel data={pages2}></Carousel>
+
+      <a href={<Test />}>Testing</a>
+
       <footer className=""></footer>
     </div>
   )
 }
 
-export default App
+export default App;
