@@ -21,8 +21,6 @@ function Carousel12({ data }) {
     }
   };
 
-  console.log(center)
-
   return (
     <BrowserRouter>
 

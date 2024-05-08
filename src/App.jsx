@@ -4,27 +4,27 @@ import Test from "./Components/pages/testPage";
 
 function App() {
   const pages1 = [
-    { text: 'Page A', url: '/hello', backGround: 'bg-blue-400'},
-    { text: 'Page B', url: '/12', backGround: 'bg-red-400'},
-    { text: 'Page C', url: '/32', backGround: 'bg-green-400'},
-    { text: 'Page X', url: '/23', backGround: 'bg-blue-400'},
-    { text: 'Page Y', url: '/21', backGround: 'bg-red-400'},
-    { text: 'Page Z', url: '/423', backGround: 'bg-green-400'},
-    { text: 'Page 1', url: '/hello', backGround: 'bg-blue-400'},
-    { text: 'Page 2', url: '/12', backGround: 'bg-red-400'},
-    { text: 'Page 3', url: '/32', backGround: 'bg-green-400'},
-    { text: 'Page 4', url: '/23', backGround: 'bg-blue-400'},
-    { text: 'Page 5', url: '/21', backGround: 'bg-red-400'},
-    { text: 'Page 6', url: '/423', backGround: 'bg-green-400'}
+    { text: 'Page A', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Page B', url: '/test', backGround: 'bg-red-400'},
+    { text: 'Page C', url: '/test', backGround: 'bg-green-400'},
+    { text: 'Page X', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Page Y', url: '/test', backGround: 'bg-red-400'},
+    { text: 'Page Z', url: '/test', backGround: 'bg-green-400'},
+    { text: 'Page 1', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Page 2', url: '/test', backGround: 'bg-red-400'},
+    { text: 'Page 3', url: '/test', backGround: 'bg-green-400'},
+    { text: 'Page 4', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Page 5', url: '/test', backGround: 'bg-red-400'},
+    { text: 'Page 6', url: '/test', backGround: 'bg-green-400'}
   ];
 
   const pages2 = [
-    { text: 'Page A', url: '/hello', backGround: 'bg-blue-400'},
-    { text: 'Page B', url: '/12', backGround: 'bg-red-400'},
-    { text: 'Page C', url: '/32', backGround: 'bg-green-400'},
-    { text: 'Page X', url: '/23', backGround: 'bg-blue-400'},
-    { text: 'Page Y', url: '/21', backGround: 'bg-red-400'},
-    { text: 'Page Z', url: '/423', backGround: 'bg-green-400'}
+    { text: 'Page A', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Page B', url: '/test', backGround: 'bg-red-400'},
+    { text: 'Page C', url: '/test', backGround: 'bg-green-400'},
+    { text: 'Page X', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Page Y', url: '/test', backGround: 'bg-red-400'},
+    { text: 'Page Z', url: '/test', backGround: 'bg-green-400'}
   ];
 
   return (
