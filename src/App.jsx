@@ -1,50 +1,25 @@
-import Carousel12 from "./Components/carousel/carousel12";
-import Carousel6 from "./Components/carousel/carousel6";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Components/pages/homePage";
 import Test from "./Components/pages/testPage";
+import Test2 from "./Components/pages/testpage2";
 
 function App() {
-  const pages1 = [
-    { text: 'Page A', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page B', url: '/test', backGround: 'bg-red-400'},
-    { text: 'Page C', url: '/test', backGround: 'bg-green-400'},
-    { text: 'Page X', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page Y', url: '/test', backGround: 'bg-red-400'},
-    { text: 'Page Z', url: '/test', backGround: 'bg-green-400'},
-    { text: 'Page 1', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page 2', url: '/test', backGround: 'bg-red-400'},
-    { text: 'Page 3', url: '/test', backGround: 'bg-green-400'},
-    { text: 'Page 4', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page 5', url: '/test', backGround: 'bg-red-400'},
-    { text: 'Page 6', url: '/test', backGround: 'bg-green-400'}
-  ];
-
-  const pages2 = [
-    { text: 'Page A', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page B', url: '/test', backGround: 'bg-red-400'},
-    { text: 'Page C', url: '/test', backGround: 'bg-green-400'},
-    { text: 'Page X', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page Y', url: '/test', backGround: 'bg-red-400'},
-    { text: 'Page Z', url: '/test', backGround: 'bg-green-400'}
-  ];
 
   return (
-    <div className="flex flex-col">
-      <h1 className="mb-16 flex justify-center">Test</h1>
+    <>
+      <BrowserRouter>
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/test' element={<Test />} />
+          <Route path='/test2' element={<Test2 />} />
+        </Routes>
+
+      </BrowserRouter>
+
       
-      <h2 className="mt-16 flex justify-center">Beginner</h2>
-      <Carousel12 data={pages1}></Carousel12>
-
-      <h2 className="mt-16 flex justify-center">Intermediate</h2>
-      <Carousel6 data={pages2}></Carousel6>
-
-      <h2 className="mt-16 flex justify-center">Advanced</h2>
-      <Carousel6 data={pages2}></Carousel6>
-
-      <a href={<Test />}>Testing</a>
-
-      <footer className=""></footer>
-    </div>
+    </>
   )
 }
 
-export default App;
+export default App

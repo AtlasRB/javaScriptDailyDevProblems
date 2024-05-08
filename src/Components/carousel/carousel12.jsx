@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Test from '../pages/testPage';
 
 function Carousel12({ data }) {
-  const [center, setCenter] = useState(0);
+  const [center, setCenter] = useState(1);
 
   const handlePrevious = () => {
     if (center < -(data.length+1)) {
@@ -22,12 +22,11 @@ function Carousel12({ data }) {
   };
 
   return (
-    <BrowserRouter>
 
       <div className="flex items-center">
-        <button onClick={handlePrevious} className="absolute z-10 bg-blue-200 py-44 px-16 rounded-r-full">Previous</button>
+        <button onClick={handlePrevious} className="absolute z-10 bg-blue-200 py-44 px-16 rounded-r-full">Rotate --&gt;</button>
 
-        <div className="flex w-full gap-64">
+        <div className="flex gap-64">
           {data.map((item, index) => {
             let transformStyle = `translateX(${center * 100}%)`;
             return (
@@ -43,13 +42,8 @@ function Carousel12({ data }) {
           })}
         </div>
 
-        <button onClick={handleNext} className="absolute  right-0 z-10 bg-blue-200 py-44 px-16 rounded-l-full">Next</button>
+        <button onClick={handleNext} className="absolute  right-0 z-10 bg-blue-200 py-44 px-16 rounded-l-full">&lt;-- Rotate</button>
       </div>
-
-      <Routes>
-        <Route path={data.url} element={data.page} />
-      </Routes>
-    </BrowserRouter>
   );
 };
 
