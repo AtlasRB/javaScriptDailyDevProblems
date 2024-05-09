@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import Test from '../pages/testPage';
 
 function Carousel6({ data }) {
   const [center, setCenter] = useState(1);
 
-  const handlePrevious = () => {
+  const handleNext = () => {
     if (center < -(data.length-3)) {
       setCenter(1);
     } else {
@@ -13,7 +12,7 @@ function Carousel6({ data }) {
     }
   };
 
-  const handleNext = () => {
+  const handlePrevious = () => {
     if (center === 1) {
       setCenter(-data.length + 2);
     } else {
@@ -22,28 +21,24 @@ function Carousel6({ data }) {
   };
 
   return (
+    <div className="flex items-center bg-gradient-to-b from-black via-darkblue to-black overflow-hidden">
+      <button onClick={handlePrevious} className="absolute z-10 bg-darkblue py-40 px-8 rounded-r-full text-9xl">&lt;</button>
 
-      <div className="flex items-center">
-        <button onClick={handlePrevious} className="absolute z-10 bg-blue-200 py-44 px-16 rounded-r-full">Rotate --&gt;</button>
-
-        <div className="flex w-full gap-64">
-          {data.map((item, index) => {
-            let transformStyle = `translateX(${center * 100}%)`;
-            return (
-              <Link key={index} to={item.url}>
-                <p
-                  className={`${item.backGround} transition-transform duration-500 ease-in-out rounded-lg p-44`}
-                  style={{ transform: transformStyle }}
-                >
-                  {item.text}
-                </p>
-              </Link>
-            );
-          })}
-        </div>
-
-        <button onClick={handleNext} className="absolute  right-0 z-10 bg-blue-200 py-44 px-16 rounded-l-full">&lt;-- Rotate</button>
+      <div className="flex gap-64">
+        {data.map((item, index) => {
+          let transformStyle = `translateX(${center * 100}%)`;
+          return (
+            <Link key={index} to={item.url} 
+            className={`${item.backGround} duration-500 ease-in-out rounded-lg size-96 font-mono text-5xl flex justify-center items-center`}
+            style={{ transform: transformStyle}}>
+                {item.text}
+            </Link>
+          );
+        })}
       </div>
+
+      <button onClick={handleNext} className="absolute right-0 z-10 bg-darkblue py-40 px-8 rounded-l-full text-9xl">&gt;</button>
+    </div>
   );
 };
 

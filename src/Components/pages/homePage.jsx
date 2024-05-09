@@ -27,19 +27,26 @@ function Home() {
   ];
 
   return (
-    <div className="flex flex-col">
-      <h1 className="mb-16 flex justify-center">Test</h1>
+    <div className="flex flex-col font-mono">
+      <h1 className="flex justify-center text-7xl">JavaScript Daily.Dev Problems</h1>   
       
-      <h2 className="mt-16 flex justify-center">Beginner</h2>
-      <Carousel12 data={pages1}></Carousel12>
+      <div>
+        <div className="my-32">
+          <h2 className="mt-16 flex justify-center text-6xl mb-8">Beginner</h2>
+          <Carousel12 data={pages1}></Carousel12>
+        </div>
 
-      <h2 className="mt-16 flex justify-center">Intermediate</h2>
-      <Carousel6 data={pages2}></Carousel6>
+        <div className="my-32">
+          <h2 className="mt-16 flex justify-center text-6xl mb-8">Intermediate</h2>
+          <Carousel6 data={pages2}></Carousel6>
+        </div>
 
-      <h2 className="mt-16 flex justify-center">Advanced</h2>
-      <Carousel6 data={pages2}></Carousel6>
-
-      <footer className=""></footer>
+        <div className="my-32">
+          <h2 className="mt-16 flex justify-center text-6xl mb-8">Advanced</h2>
+          <Carousel6 data={pages2}></Carousel6>
+        </div>
+      </div>
+      
     </div>
   )
 }
