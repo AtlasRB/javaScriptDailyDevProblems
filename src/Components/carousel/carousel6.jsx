@@ -22,14 +22,14 @@ function Carousel6({ data }) {
 
   return (
     <div className="flex items-center bg-gradient-to-b from-black via-darkblue to-black overflow-hidden">
-      <button onClick={handlePrevious} className="absolute z-10 bg-darkblue py-40 px-8 rounded-r-full text-9xl">&lt;</button>
+      <button onClick={handlePrevious} className="absolute z-10 bg-darkblue rounded-r-full lg:py-40 lg:px-8 lg:text-9xl py-24 px-4 text-6xl">&lt;</button>
 
-      <div className="flex gap-64">
+      <div className="flex lg:gap-64 gap-16">
         {data.map((item, index) => {
           let transformStyle = `translateX(${center * 100}%)`;
           return (
             <Link key={index} to={item.url} 
-            className={`${item.backGround} duration-500 ease-in-out rounded-lg size-96 font-mono text-5xl flex justify-center items-center`}
+            className={`${item.backGround} duration-500 ease-in-out rounded-lg flex justify-center items-center font-mono lg:size-96 lg:text-6xl size-32 text-2xl`}
             style={{ transform: transformStyle}}>
                 {item.text}
             </Link>
@@ -37,7 +37,7 @@ function Carousel6({ data }) {
         })}
       </div>
 
-      <button onClick={handleNext} className="absolute right-0 z-10 bg-darkblue py-40 px-8 rounded-l-full text-9xl">&gt;</button>
+      <button onClick={handleNext} className="absolute right-0 z-10 bg-darkblue rounded-l-full lg:py-40 lg:px-8 lg:text-9xl py-24 px-4 text-6xl">&gt;</button>
     </div>
   );
 };

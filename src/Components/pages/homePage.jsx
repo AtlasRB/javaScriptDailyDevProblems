@@ -28,21 +28,21 @@ function Home() {
 
   return (
     <div className="flex flex-col font-mono">
-      <h1 className="flex justify-center text-7xl">JavaScript Daily.Dev Problems</h1>   
+      <h1 className="text-center lg:text-7xl text-4xl">JavaScript Daily.Dev Problems</h1>   
       
       <div>
         <div className="my-32">
-          <h2 className="mt-16 flex justify-center text-6xl mb-8">Beginner</h2>
+          <h2 className="mt-16 flex justify-center lg:text-6xl lg:mb-8 text-4xl mb-16">Beginner</h2>
           <Carousel12 data={pages1}></Carousel12>
         </div>
 
         <div className="my-32">
-          <h2 className="mt-16 flex justify-center text-6xl mb-8">Intermediate</h2>
+          <h2 className="mt-16 flex justify-center lg:text-6xl lg:mb-8 text-4xl mb-16">Intermediate</h2>
           <Carousel6 data={pages2}></Carousel6>
         </div>
 
         <div className="my-32">
-          <h2 className="mt-16 flex justify-center text-6xl mb-8">Advanced</h2>
+          <h2 className="mt-16 flex justify-center lg:text-6xl lg:mb-8 text-4xl mb-16">Advanced</h2>
           <Carousel6 data={pages2}></Carousel6>
         </div>
       </div>
