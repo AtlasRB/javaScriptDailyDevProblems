@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Carousel6({ data }) {
   const [center, setCenter] = useState(1);
@@ -29,7 +29,7 @@ function Carousel6({ data }) {
           let transformStyle = `translateX(${center * 110}%)`;
           return (
             <Link key={index} to={item.url} 
-            className={`${item.backGround} duration-500 ease-in-out rounded-lg flex justify-center items-center text-center font-mono lg:size-96 lg:text-6xl size-32 text-2xl`}
+            className={`${item.backGround}-400 hover:${item.backGround}-700 duration-500 ease-in-out rounded-lg flex justify-center items-center text-center font-mono lg:size-96 lg:text-5xl size-32 text-md`}
             style={{ transform: transformStyle}}>
                 {item.text}
             </Link>

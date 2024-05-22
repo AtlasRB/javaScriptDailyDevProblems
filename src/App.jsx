@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/pages/homePage";
-import Test from "./Components/pages/testPage";
-import Test2 from "./Components/pages/testpage2";
+import Test from "./Components/pages/notAttempted";
+import NotFound from "./Components/pages/notFound";
 import './App.css';
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
 
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/test' element={<Test />} />
-          <Route path='/test2' element={<Test2 />} />
+          <Route path='/notAttempted' element={<Test />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
 
       </BrowserRouter> 
