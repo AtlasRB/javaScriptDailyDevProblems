@@ -3,12 +3,12 @@ import Carousel6 from "../carousel/carousel6";
 
 function Home() {
   const pages1 = [
-    { text: 'Page A', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page B', url: '/test2', backGround: 'bg-red-400'},
-    { text: 'Page C', url: '/test', backGround: 'bg-green-400'},
-    { text: 'Page X', url: '/test', backGround: 'bg-blue-400'},
-    { text: 'Page Y', url: '/test', backGround: 'bg-red-400'},
-    { text: 'Page Z', url: '/test', backGround: 'bg-green-400'},
+    { text: 'Hello World Variations', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Sum of Two Numbers', url: '/test2', backGround: 'bg-red-400'},
+    { text: 'Convert Minutes into Seconds', url: '/test', backGround: 'bg-green-400'},
+    { text: 'FizzBuzz', url: '/test', backGround: 'bg-blue-400'},
+    { text: 'Palindrome Checker', url: '/test', backGround: 'bg-red-400'},
+    { text: 'Find the Longest Word', url: '/test', backGround: 'bg-green-400'},
     { text: 'Page 1', url: '/test', backGround: 'bg-blue-400'},
     { text: 'Page 2', url: '/test', backGround: 'bg-red-400'},
     { text: 'Page 3', url: '/test', backGround: 'bg-green-400'},

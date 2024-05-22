@@ -26,10 +26,10 @@ function Carousel12({ data }) {
 
       <div className="flex lg:gap-64 gap-16">
         {data.map((item, index) => {
-          let transformStyle = `translateX(${center * 100}%)`;
+          let transformStyle = `translateX(${center * 110}%)`;
           return (
             <Link key={index} to={item.url} 
-            className={`${item.backGround} duration-500 ease-in-out rounded-lg flex justify-center items-center font-mono lg:size-96 lg:text-6xl size-32 text-2xl`}
+            className={`${item.backGround} duration-500 ease-in-out rounded-lg flex justify-center items-center text-center font-mono lg:size-96 lg:text-6xl size-32 text-2xl`}
             style={{ transform: transformStyle}}>
                 {item.text}
             </Link>
