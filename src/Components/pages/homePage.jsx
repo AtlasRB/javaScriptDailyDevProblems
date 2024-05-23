@@ -3,7 +3,7 @@ import Carousel6 from "../carousel/carousel6";
 
 function Home() {
   const pages1 = [
-    { text: 'Hello World Variations', url: '/notAttempted', backGround: 'bg-blue'},
+    { text: 'Hello World Variations', url: '/beginner1', backGround: 'bg-blue'},
     { text: 'Sum of Two Numbers', url: '/notAttempted', backGround: 'bg-red'},
     { text: 'Convert Minutes into Seconds', url: '/notAttempted', backGround: 'bg-green'},
     { text: 'FizzBuzz', url: '/notAttempted', backGround: 'bg-blue'},

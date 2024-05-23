@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 
-function Test() {
+function NotAttempted() {
   
   return (
     <div className='font-mono text-5xl text-center'>
@@ -12,4 +12,4 @@ function Test() {
   );
 };
 
-export default Test
+export default NotAttempted

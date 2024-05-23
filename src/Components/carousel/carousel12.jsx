@@ -28,7 +28,7 @@ function Carousel12({ data }) {
         {data.map((item, index) => {
           let transformStyle = `translateX(${center * 110}%)`;
           return (
-            <Link key={index} to={item.url} 
+            <Link key={index} to={item.url}
             className={`${item.backGround}-400 hover:${item.backGround}-700 duration-500 ease-in-out rounded-lg flex justify-center items-center text-center font-mono lg:size-96 lg:text-5xl size-32 text-md`}
             style={{ transform: transformStyle}}>
                 {item.text}
