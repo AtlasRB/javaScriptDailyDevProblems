@@ -3,36 +3,36 @@ import Carousel6 from "../carousel/carousel6";
 
 function Home() {
   const pages1 = [
-    { text: 'Hello World Variations', url: '/beginner1', backGround: 'bg-blue'},
-    { text: 'Sum of Two Numbers', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Convert Minutes into Seconds', url: '/notAttempted', backGround: 'bg-green'},
-    { text: 'FizzBuzz', url: '/notAttempted', backGround: 'bg-blue'},
-    { text: 'Palindrome Checker', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Find the Longest Word', url: '/notAttempted', backGround: 'bg-green'},
-    { text: 'Sudoku Solver', url: '/notAttempted', backGround: 'bg-blue'},
-    { text: 'Binary Search Trees', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Efficient Prime Number Functions', url: '/notAttempted', backGround: 'bg-green'},
-    { text: 'Writing a Program to play a Perfect Game of Tic-Tac-Toe', url: '/notAttempted', backGround: 'bg-blue'},
-    { text: 'Topological Sort Implementation', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Randomize Line Sequence in a File', url: '/notAttempted', backGround: 'bg-green'}
+    { text: 'Hello World Variations', url: '/beginner1', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'Sum of Two Numbers', url: '/notAttempted', backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Convert Minutes into Seconds', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'},
+    { text: 'FizzBuzz', url: '/notAttempted', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'Palindrome Checker', url: '/notAttempted', backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Find the Longest Word', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'},
+    { text: 'Sudoku Solver', url: '/notAttempted', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'Binary Search Trees', url: '/notAttempted', backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Efficient Prime Number Functions', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'},
+    { text: 'Writing a Program to play a Perfect Game of Tic-Tac-Toe', url: '/notAttempted', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'Topological Sort Implementation', url: '/notAttempted',backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Randomize Line Sequence in a File', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'}
   ];
 
   const pages2 = [
-    { text: 'Array Rotation', url: '/notAttempted', backGround: 'bg-blue'},
-    { text: 'Two Sum Problem', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Integer to Roman Numeral Converter', url: '/notAttempted', backGround: 'bg-green'},
-    { text: 'Validating Email Addresses', url: '/notAttempted', backGround: 'bg-blue'},
-    { text: 'Pyramid Pattern Printing', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Find Missing Number in Array', url: '/notAttempted', backGround: 'bg-green'}
+    { text: 'Array Rotation', url: '/notAttempted', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'Two Sum Problem', url: '/notAttempted', backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Integer to Roman Numeral Converter', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'},
+    { text: 'Validating Email Addresses', url: '/notAttempted', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'Pyramid Pattern Printing', url: '/notAttempted', backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Find Missing Number in Array', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'}
   ];
 
   const pages3 = [
-    { text: 'Balanced Binary Tree Checker', url: '/notAttempted', backGround: 'bg-blue'},
-    { text: 'In-Order Successor in a Binary Search Tree', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Lowest Common Ancestor in a Binary Tree', url: '/notAttempted', backGround: 'bg-green'},
-    { text: 'Alien Dictionary Ordering', url: '/notAttempted', backGround: 'bg-blue'},
-    { text: 'Regular Expression Matcher', url: '/notAttempted', backGround: 'bg-red'},
-    { text: 'Serialize and Deserialize Binary Trees', url: '/notAttempted', backGround: 'bg-green'}
+    { text: 'Balanced Binary Tree Checker', url: '/notAttempted', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'In-Order Successor in a Binary Search Tree', url: '/notAttempted', backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Lowest Common Ancestor in a Binary Tree', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'},
+    { text: 'Alien Dictionary Ordering', url: '/notAttempted', backGround: 'bg-blue-500', backGroundHover: 'bg-blue-700'},
+    { text: 'Regular Expression Matcher', url: '/notAttempted', backGround: 'bg-red-500', backGroundHover: 'bg-red-700'},
+    { text: 'Serialize and Deserialize Binary Trees', url: '/notAttempted', backGround: 'bg-green-500', backGroundHover: 'bg-green-700'}
   ];
 
   return (

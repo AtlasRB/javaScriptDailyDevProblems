@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         'GowanBatang': ['Gowan Batang', 'sans-serif']
       },
+      margin: {
+        '20%': '20%',
+      },
     },
   },
   plugins: [],
