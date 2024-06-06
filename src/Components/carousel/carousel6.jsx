@@ -26,7 +26,7 @@ function Carousel6({ data }) {
 
       <div className="flex lg:gap-64 gap-16">
         {data.map((item, index) => {
-          let transformStyle = `translateX(${center * 110}%)`;
+          let transformStyle = `translateX(${center * 100}%)`;
           return (
             <Link key={index} to={item.url} 
             className={`${item.backGround} hover:${item.backGroundHover} duration-500 ease-in-out rounded-lg flex justify-center items-center text-center font-mono lg:size-96 lg:text-5xl size-32 text-md`}
