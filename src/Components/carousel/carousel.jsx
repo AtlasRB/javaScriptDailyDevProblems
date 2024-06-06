@@ -7,16 +7,37 @@ function Carousel({ data }) {
   useEffect(() => {
     const element = scrollRef.current;
     if (element) {
+      // Mouse wheel event handler
       const handleWheel = (event) => {
         event.preventDefault();
         element.scrollBy({
-          left: event.deltaY < 0 ? -120 : 120,
+          left: event.deltaY < 0 ? -140 : 140,
         });
       };
+
+      // Touch event handlers
+      const handleTouchStart = (event) => {
+        startX = event.touches[0].pageX;
+      };
+      const handleTouchMove = (event) => {
+        event.preventDefault();
+        const deltaX = event.touches[0].pageX - startX;
+        startX = event.touches[0].pageX;
+        element.scrollBy({
+          left: -deltaX,
+        });
+      };
+
+      // Add event listeners
       element.addEventListener('wheel', handleWheel);
-      // Cleanup event listener on component unmount
+      element.addEventListener('touchstart', handleTouchStart);
+      element.addEventListener('touchmove', handleTouchMove);
+
+      // Cleanup event listeners on component unmount
       return () => {
         element.removeEventListener('wheel', handleWheel);
+        element.removeEventListener('touchstart', handleTouchStart);
+        element.removeEventListener('touchmove', handleTouchMove);
       };
     }
   }, []);
