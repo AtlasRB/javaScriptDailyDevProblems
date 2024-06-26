@@ -52,10 +52,10 @@ function Carousel({ data, title }) {
 
   return (
     <div>
-      <div className="flex justify-center place-items-center mb-16 lg:gap-32 gap-8">
-        <button onClick={() => scroll(-600)} className="z-10 bg-darkblue rounded-full text-6xl lg:p-8 p-4">&lt;</button>
-        <h2 className="lg:text-6xl text-4xl">{title}</h2>
-        <button onClick={() => scroll(600)} className="z-10 bg-darkblue rounded-full text-6xl lg:p-8 p-4">&gt;</button>
+      <div className="flex justify-center place-items-center mb-16 lg:gap-32 gap-4">
+        <button onClick={() => scroll(-250)} className="z-10 bg-darkblue rounded-full text-6xl lg:p-8 p-2">&lt;</button>
+        <h2 className="lg:text-6xl text-3xl">{title}</h2>
+        <button onClick={() => scroll(250)} className="z-10 bg-darkblue rounded-full text-6xl lg:p-8 p-2">&gt;</button>
       </div>
 
       <div className="flex items-center bg-gradient-to-b from-black via-darkblue to-black mb-32 overflow-hidden" ref={scrollRef}>  
@@ -63,7 +63,7 @@ function Carousel({ data, title }) {
           {data.map((item, index) => {
             return (
               <Link key={index} to={item.url}
-              className={`${item.backGround} hover:${item.backGroundHover} duration-500 ease-in-out rounded-lg flex justify-center items-center text-center font-mono lg:size-96 lg:text-5xl size-32 text-md`}>
+              className={`${item.backGround} hover:${item.backGroundHover} duration-500 ease-in-out rounded-lg flex justify-center items-center text-center font-mono lg:size-96 lg:text-5xl size-48 text-md`}>
                   {item.text}
               </Link>
             );
