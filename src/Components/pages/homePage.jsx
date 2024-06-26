@@ -1,5 +1,4 @@
 import Carousel from "../carousel/carousel";
-import Carousel6 from "../carousel/carousel6";
 
 function Home() {
   const pages1 = [
