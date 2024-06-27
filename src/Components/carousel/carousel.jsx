@@ -22,29 +22,12 @@ function Carousel({ data, title }) {
         });
       };
 
-      // Touch event handlers
-      const handleTouchStart = (event) => {
-        startX = event.touches[0].pageX;
-      };
-      const handleTouchMove = (event) => {
-        event.preventDefault();
-        const deltaX = event.touches[0].pageX - startX;
-        startX = event.touches[0].pageX;
-        element.scrollBy({
-          left: -deltaX,
-        });
-      };
-
       // Add event listeners
       element.addEventListener('wheel', handleWheel);
-      element.addEventListener('touchstart', handleTouchStart);
-      element.addEventListener('touchmove', handleTouchMove);
 
       // Cleanup event listeners on component unmount
       return () => {
         element.removeEventListener('wheel', handleWheel);
-        element.removeEventListener('touchstart', handleTouchStart);
-        element.removeEventListener('touchmove', handleTouchMove);
       };
     }
   }, []);
