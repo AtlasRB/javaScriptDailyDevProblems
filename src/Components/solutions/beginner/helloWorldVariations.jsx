@@ -17,6 +17,10 @@ function Beginner1() {
     console.log("Hello " + nameValue.value);
   }
 
+  //Have a nice day
+  console.log("Hello World");
+  console.log("Have a nice day");
+
   //Create a picture
   console.log("#   # ##### #     #       ###      #   #  ###  ####  #     ####  ");
   console.log("#   # #     #     #      #   #     # # # #   # #   # #     #   # ");
@@ -91,6 +95,10 @@ function Beginner1() {
             <p>    var nameValue = document.getElementById("name");</p>
             <p>    console.log("Hello " + nameValue.value);</p>
             <p className="mb-16">&#125;</p>
+
+            <h3 className="lg:text-4xl text-2xl mb-4 text-center">Have a nice day!</h3>
+            <p>console.log("Hello World")</p>
+            <p className="mb-16">console.log("Have a nice day)</p>
 
             <h3 className="lg:text-4xl text-2xl mb-4 text-center">Create a picture</h3>
             <p className="lg:text-2xl text-xs mb-16">console.log("#   # ##### #     #       ###      #   #  ###  ####  #     ####  ");<br />
